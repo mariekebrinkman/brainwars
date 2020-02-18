@@ -1,0 +1,25 @@
+#make10 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#make10Spel {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    height: 100%;
+}
+#make10Spel .kaart {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: azure;
+    border: 1px solid darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

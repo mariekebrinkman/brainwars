@@ -1,0 +1,23 @@
+#rapid {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+#rapidSpel {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top:100px;
+}
+#rapidSpel button {
+    width: 20%;
+    margin: 10px;
+    font-size: 0.9em
+}
+#rapidSpel #img {
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

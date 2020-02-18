@@ -1,0 +1,17 @@
+#birdwatching {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#birdwatching table,tr, td{
+    border: 5px solid linen;
+    border-radius: 20%;
+}
+#birdwatching td {
+    background-color: rgb(250, 196, 142);
+    width:75px;
+    height: 75px;
+}

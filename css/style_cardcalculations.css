@@ -1,0 +1,47 @@
+#calculations {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    
+}
+#calculationsSpel {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    height: 100%;
+    
+}
+#calculationsSpel #kaartL, #calculations #kaartR {
+    width: 100px;
+    height: 150px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calculationsSpel #kaartL {
+    background-color: rgb(250, 196, 142);
+}
+#calculationsSpel #kaartR {
+    background-color: rgb(250, 196, 142);
+}
+#calculationsSpel button {
+    font-size: 0.8em;
+}
+#calculationsSpel .kaart {
+    width: 75px;
+    height: 100px;
+    background-color: powderblue;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calculationsSpel #antwoord {
+    display:flex;
+    flex-wrap: wrap;
+    width: 35%;
+}
