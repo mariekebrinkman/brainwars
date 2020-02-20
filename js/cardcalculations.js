@@ -26,45 +26,49 @@ function start() {
 }
 
 function bepaalKaartKleur() {
-    kleurL = Math.round(Math.random());
-    document.getElementById("kaartL").style.backgroundColor = kleurRij[kleurL];
-    getalL = Math.round(Math.random() * 10 );
-    document.getElementById("kaartL").innerHTML = getalL;
+    if (startSpel) {
+        kleurL = Math.round(Math.random());
+        document.getElementById("kaartL").style.backgroundColor = kleurRij[kleurL];
+        getalL = Math.round(Math.random() * 10 );
+        document.getElementById("kaartL").innerHTML = getalL;
 
-    kleurR  = Math.round(Math.random());
-    document.getElementById("kaartR").style.backgroundColor = kleurRij[kleurR];
-    getalR = Math.round(Math.random() * 10 );
-    document.getElementById("kaartR").innerHTML = getalR;
+        kleurR  = Math.round(Math.random());
+        document.getElementById("kaartR").style.backgroundColor = kleurRij[kleurR];
+        getalR = Math.round(Math.random() * 10 );
+        document.getElementById("kaartR").innerHTML = getalR;
+    }
 }
 function toonAntwoorden() {
-    if (kleurL == kleurR) {
-        antwoord = getalL + getalR;
-    } else {
-        antwoord = getalL - getalR;
-    }
-    //het juiste antwoord kan 2x voor komen, eventueel een check inbouwen dat dit getal niet nog eens getoond wordt.
-    antwoordRij.push(antwoord);
-    for (i=1;i<=3;i++) {
-        antwoordRij.push(Math.round(Math.random()*20));
-    }
-    //schud de rij
-    antwoordRij.sort(function(a, b){return 0.5 - Math.random()});
-    for (i=1;i<=4;i++) {
-        document.getElementById("kaart" + i).innerHTML = antwoordRij[i-1];
+    if (startSpel) {
+        if (kleurL == kleurR) {
+            antwoord = getalL + getalR;
+        } else {
+            antwoord = getalL - getalR;
+        }
+        antwoordRij.push(antwoord);
+        for (i=1;i<=3;i++) {
+            antwoordRij.push(Math.round(Math.random()*20));
+        }
+        //schud de rij
+        antwoordRij.sort(function(a, b){return 0.5 - Math.random()});
+        for (i=1;i<=4;i++) {
+            document.getElementById("kaart" + i).innerHTML = antwoordRij[i-1];
+        }
     }
 }
 function keuze(veld) {
-    keuzeWaarde = document.getElementById(veld).innerHTML;
-    if (keuzeWaarde == antwoord) {
-        score++;
-        document.getElementById("score").value = score;
+    if (startSpel) 
+        keuzeWaarde = document.getElementById(veld).innerHTML;
+        if (keuzeWaarde == antwoord) {
+            score++;
+            document.getElementById("score").value = score;
+        }
+        bepaalKaartKleur();
+        for (i=1;i<=4;i++) {
+            document.getElementById("kaart" + i).innerHTML = "";
+        }
+        antwoordRij = [];
     }
-    bepaalKaartKleur();
-    for (i=1;i<=4;i++) {
-        document.getElementById("kaart" + i).innerHTML = "";
-    }
-    antwoordRij = [];
-
 }
 function toonTijd() {
     tijd++;
