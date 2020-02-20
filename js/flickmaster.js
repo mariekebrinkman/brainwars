@@ -5,6 +5,7 @@ var score=0;
 var timeOut, interval;
 var tijd=0;
 var startSpel=false;
+
 function start() {
     startSpel=true;
     score=0;

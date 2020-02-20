@@ -12,13 +12,15 @@
     <?php include "menu.php";?>
 </header>
 <main>
-    
-    <section id="keuze">
-        <button onclick="window.location.href='spellen.php'">alle spellen</button>
-        <button onclick="window.location.href='spel1.php'">Spel 1</button>
-        <button onclick="window.location.href='spel2.php'">Spel 2</button>
-    </section>
+    <div class="wrapper">
+        <section id="keuze">
+            <button onclick="window.location.href='spellen.php'">alle spellen</button>
+            <button onclick="window.location.href='spel1.php'">Spel 1</button>
+            <button onclick="window.location.href='spel2.php'">Spel 2</button>
+        </section>
+    </div>
 </main>
+
 <footer>
     
 </footer>

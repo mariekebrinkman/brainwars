@@ -14,10 +14,12 @@
     <?php include "menu.php"?>   
 </header>
 <main>
-    
+<div class="spel-wrapper">
+
     <div id="spel">
         <?php include "includes/" . $_GET["spel"].".html";?>
     </div>
+
     <div id="scorebord">
         <div id="over">Tijd is om!!</div>
         <form method="POST">
@@ -27,6 +29,8 @@
         <button id="start" onclick="start()">Start</button>
         <div id="tijdTekst">Tijd: <span id="tijd">0</span></div>
     </div>
+
+</div>
 
 </main>
 <footer>

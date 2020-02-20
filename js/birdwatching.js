@@ -6,6 +6,7 @@ var tijd=0;
 var aantalGroen=0;
 var aantalBlauw=0;
 var startSpel=false;
+
 function start() {
     startSpel=true;
     score=0;

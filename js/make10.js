@@ -35,7 +35,9 @@ function toonGetallen() {
         for (i=1;i<=3;i++) {
             document.getElementById("kaart"+i).innerHTML = getalRij[i-1];
         }
+
     }
+    console.log(getalRij);
 }
 function keuze(id) {
     if (startSpel) {

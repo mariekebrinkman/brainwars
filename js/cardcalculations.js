@@ -42,6 +42,7 @@ function toonAntwoorden() {
     } else {
         antwoord = getalL - getalR;
     }
+    //het juiste antwoord kan 2x voor komen, eventueel een check inbouwen dat dit getal niet nog eens getoond wordt.
     antwoordRij.push(antwoord);
     for (i=1;i<=3;i++) {
         antwoordRij.push(Math.round(Math.random()*20));

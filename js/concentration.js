@@ -7,6 +7,7 @@ var kaart2="";
 var symboolRij= ["@","@", "%", "%", "$", "$"];
 var draaiOm = false;
 var startSpel=false;
+
 function start() {
     startSpel=true;
     score=0;

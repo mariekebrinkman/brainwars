@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Document</title>
+    <title>Spellen</title>
 </head>
 <body>
-<header>    
+<header> 
+    <?php include "menu.php"?>   
 </header>
 <main>
-    speluitleg
+    <div class="wrapper">
+    uitleg
+    </div>
 </main>
-<footer>
-    
-</footer>
+
+<footer></footer>
 
 </body>
 </html>

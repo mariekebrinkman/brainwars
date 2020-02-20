@@ -5,16 +5,46 @@
     height: 100%;
     
 }
-#RPS #groot {
+
+#RPS #groot,
+#RPS #speler,
+#RPS #computer
+ {
     
-    width: 200px;
-    margin: 75px 0 20px 0;
+    width: 160px;
+    height:150px;
+    margin: 5px 10px 5px 0;
     background-color: #33ccff;
+    padding:10px;
 }
+
+#RPS #groot img,
+#RPS #speler img,
+#RPS #computer img
+ {
+    
+    max-width: 150px;
+    max-height:150px;
+}
+
 #RPS .klein {
     width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
 }
+
 #RPS #keuze {
     display:flex;
     flex-direction: row;
+}
+
+#rsp_antwoord
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 25px;
 }
