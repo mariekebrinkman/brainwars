@@ -23,17 +23,15 @@ function start() {
 function toonBord() {
     if (startSpel) {
         toonRij = [];
-        //genereer een rij met 6 verschillende letters;
-        for (i=1;i<=6;i++) {
+        //genereer een rij met 8 verschillende letters;
+        for (i=1;i<=8;i++) {
             var getal = Math.floor(Math.random() * 26);
             toonRij.push(letterRij[getal]);
         }
         //kies een willekeurige letter uit deze rij
-        var getal = Math.floor(Math.random() * 6);
+        var getal = Math.floor(Math.random() * 8);
         letter = toonRij[getal];
-        //voeg nog 2 lege toe
-        toonRij.push("");
-        toonRij.push("");
+       
         //shuffle de rij
         toonRij.sort(function(a, b){return 0.5 - Math.random()});
         //toon de rij op het scherm

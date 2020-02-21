@@ -37,7 +37,6 @@ function toonGetallen() {
         }
 
     }
-    console.log(getalRij);
 }
 function keuze(id) {
     if (startSpel) {

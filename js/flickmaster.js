@@ -34,9 +34,10 @@ function kant(richting) {
         if (pijlKlikRij[keuze] == richting) {
             score++;
         }
+    
+        document.getElementById("score").value = score;
+        toonPijl();
     }
-    document.getElementById("score").value = score;
-    toonPijl();
 }
 
 function toonTijd() {

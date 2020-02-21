@@ -27,7 +27,7 @@ function toonSom() {
         antwoordRij = [];
         som = "";
         //2 3 of 4 getallen
-        aantalGetallen = Math.round(Math.random()*2)+1;  
+        aantalGetallen = Math.round(Math.random()*2)+2;  
         for (i=1;i<=aantalGetallen;i++) {
             getal = Math.floor(Math.random()*9+1);
             som += getal;
