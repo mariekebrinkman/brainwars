@@ -63,13 +63,13 @@ function keuze(veld) {
             score++;
             document.getElementById("score").value = score;
         }
-        bepaalKaartKleur();
-        for (i=1;i<=4;i++) {
-            document.getElementById("kaart" + i).innerHTML = "";
-        }
-        antwoordRij = [];
+    bepaalKaartKleur();
+    for (i=1;i<=4;i++) {
+        document.getElementById("kaart" + i).innerHTML = "";
     }
+    antwoordRij = [];
 }
+
 function toonTijd() {
     tijd++;
     document.getElementById("tijd").innerHTML = tijd;
