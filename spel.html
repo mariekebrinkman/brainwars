@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <script src=""></script>
+    <title>Document</title>
+</head>
+<body>
+<header> 
+<div class="container">
+        <div class="logo">
+            <a href="index.html">
+                    <img id="logo" src="https://via.placeholder.com/150"></img>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="spel.html">Spel</a></li>
+                <li class="menu-item"><a href="uitleg.html">Uitleg</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="spel-wrapper">
+
+        <div id="spel">
+           Maak hier je spelbord 
+        </div>
+    
+        <div id="scorebord">
+            <div id="over">Tijd is om!!</div>
+            <form method="POST">
+                <input type=number id="score" name="score" value=0 readonly>
+            </form>
+            <button id="start" onclick="start()">Start</button>
+            <div id="tijdTekst">Tijd: <span id="tijd">0</span></div>
+        </div>
+    
+    </div>
+    
+    </main>
+<footer>
+    
+</footer>
+
+</body>
+</html>

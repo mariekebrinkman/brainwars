@@ -196,3 +196,7 @@ button, #scorebord input[type="submit"] {
 button:disabled {
     background-color:lightskyblue;
 }
+
+#start{ 
+    margin-top:30px;
+}
